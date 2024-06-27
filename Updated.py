@@ -436,7 +436,7 @@ def main():
                 progress_bar.progress(100)
 
                 st.subheader("Converted Sign Language Video:")
-                st.video("merged.mp4")  # Display the video in Streamlit
+                st.video("merged.mp4")  
 
             else:
                 st.write("Please enter some text")
