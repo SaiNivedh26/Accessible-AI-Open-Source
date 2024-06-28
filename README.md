@@ -83,11 +83,12 @@ The primary objective of this project is to bridge the communication gap for ind
    https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z
    ```
    - Update the path location in `VideoProessor.py`
-   - 
+
 3. **Download the latest version of `JDK` for creating the JAVA Environment to access the two `.jar` files from the below link:**
    ```
    https://download.oracle.com/java/22/latest/jdk-22_windows-x64_bin.zip
    ```
+   - Update the `Java.exe` location in `textToISL.py`
    
 4. **Create an API credentials for the Speech To Text API from Google Cloud by following these steps:**
    
