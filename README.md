@@ -28,7 +28,8 @@ The primary objective of this project is to bridge the communication gap for ind
 - **num2words:** For converting numbers to words.
 - **pytube:** For downloading YouTube videos.
 - **pandas:** For data manipulation and handling.
-- **Stanford Parser:** For syntactic parsing of sentences.
+- **`Stanford Parser`:** Used for syntactic parsing of text, which involves analyzing the grammatical structure of sentences.
+- **`stanford-parser-3.9.1-models`:** This package contains pre-trained models that the parser uses to analyze text.
 
 ## Methodology 📝
 ### YouTube Video Processing 📽️
@@ -70,13 +71,33 @@ The primary objective of this project is to bridge the communication gap for ind
 
      
 ## How to Run 💻
-1. **Clone the Repository:**
+
+1. **Download the `stanford-parser.jar` and `stanford-parser-3.9.1-models.jar` from the following link:**
+   ```
+   http://nlp.stanford.edu/software/stanford-parser-4.2.1.zip
+   ```
+   - Update the path location in `textToISL.py`
+     
+2. **Download the `ffmpeg.exe` for audio processing from the following link:**
+   ```
+   https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z
+   ```
+   - Update the path location in `VideoProessor.py`
+   - 
+3. **Download the latest version of `JDK` for creating the JAVA Environment to access the two `.jar` files from the below link:**
+   ```
+   https://download.oracle.com/java/22/latest/jdk-22_windows-x64_bin.zip
+   ```
+   
+4. **Create an API credentials for the Speech To Text API from Google Cloud by following these steps:**
+   
+5. **Clone the Repository:**
    ```
    git clone https://github.com/SaiNivedh26/Hackathon-June-2024
    cd Hackathon-June-2024
    ```
 
-2. **Run the app.py file in the terminal:**
+6. **Run the app.py file in the terminal:**
    ```
    streamlit run Hackathon-June-2024/app.py
    ```
