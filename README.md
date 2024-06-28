@@ -68,9 +68,81 @@ The primary objective of this project is to bridge the communication gap for ind
 4. **Testing and Optimization:**
    - Test the application with various inputs to ensure accuracy and robustness.
    - Optimize the processing pipeline for efficiency and speed.
+  
+<br>
+<br>
+<br>
 
+# Setting Up Google Cloud Credentials and APIs for Speech-to-Text
+
+## Prerequisites
+
+1. **Google Cloud Account**: Ensure you have a Google Cloud account. If not, you can sign up [here](https://cloud.google.com/).
+
+2. **Google Cloud SDK**: Install the Google Cloud SDK by following the instructions [here](https://cloud.google.com/sdk/docs/install).
+
+## Step 1: Create a New Project
+
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
+2. Click on the project drop-down menu at the top of the page.
+3. Click **New Project**.
+4. Enter a name for your project.
+5. Click **Create**.
+
+## Step 2: Enable APIs
+
+1. Go to the [API Library](https://console.cloud.google.com/apis/library).
+2. Search for **"Cloud Speech-to-Text API"**.
+3. Click on the **"Cloud Speech-to-Text API"** result.
+4. Click **Enable**.
+
+## Step 3: Set Up Authentication
+
+1. Go to the [Credentials](https://console.cloud.google.com/apis/credentials) page in the Cloud Console.
+2. Click **Create credentials** and select **Service account**.
+3. Enter a name for your service account and click **Create and continue**.
+4. Assign the role **"Project" > "Editor"** and click **Continue**.
+5. Click **Done**.
+6. In the service account list, click on the newly created service account.
+7. Click **Keys** and then **Add key** > **Create new key**.
+8. Select **JSON** and click **Create**. Save the downloaded JSON file securely.
+
+## Step 4: Set Up Google Cloud SDK
+
+1. Open your terminal.
+2. Initialize the Google Cloud SDK by running:
+    ```sh
+    gcloud init
+    ```
+3. Authenticate with your Google account and select your newly created project.
+4. Set the environment variable to the path of your service account key file:
+    ```sh
+    export GOOGLE_APPLICATION_CREDENTIALS="[PATH_TO_YOUR_SERVICE_ACCOUNT_KEY_JSON]"
+    ```
+    Replace `[PATH_TO_YOUR_SERVICE_ACCOUNT_KEY_JSON]` with the actual file path.
+<br> 
+
+## Step-5: Setting Up a Cloud Storage Bucket
+
+1. Open the [Google Cloud Console](https://console.cloud.google.com/).
+2. Navigate to **Storage** > **Browser**.
+3. Click **Create bucket**.
+4. Enter a unique name for your bucket.
+5. Select a **Location type** and **Location** for your bucket.
+6. Choose a **Default storage class**.
+7. Configure **Access control**:
+    - For simplicity, you can choose **Uniform**.
+8. Click **Create**.
+<br>
+
+## Step 6: Update the Path 
+
+1. Update the paths of JSON file which you've downloaded in main code
+2. Update the name of bucket correctly in main code
+
+<br>
      
-## How to Run 💻
+# How to Run 💻
 
 1. **Download the `stanford-parser.jar` and `stanford-parser-3.9.1-models.jar` from the following link:**
    ```
