@@ -4,9 +4,9 @@
 
 ### Issues to Address
 
-- [x] Issue 1: while giving text alone, the video is not generating
-- [ ] Issue 2: Even if I upload some video/audio, still the same condition
+- [x] ~~Issue 1: while giving text alone, the video is not generating~~
+- [x] ~~Issue 2: Even if I upload some video/audio, still the same condition~~
 - [ ] Issue 3: Improve documentation ( making it in detailed pdf )
-- [x] Issue 4: Improve User Interface
-
-
+- [x] ~~Issue 4: Improve User Interface~~
+- [ ] Issue 5: Make detailed report
+- [ ] Issue 6: Upload Demo video
