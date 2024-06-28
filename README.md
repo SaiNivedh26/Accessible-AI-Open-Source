@@ -1,19 +1,19 @@
-# Digital Content to Sign Language Converter
+# 🖐️🤘Digital Content to Sign Language Converter
 
-## Project Demo
+## 💻Project Demo
 Before diving into the details of the process, take a moment to watch a demo video showcasing our project in action.
 
 
 https://github.com/SaiNivedh26/Hackathon-June-2024/assets/142657686/5fc4c085-bc0c-4f40-bd07-5f316945b1ff
 
 
-## Project Overview
+## 🔎Project Overview
 The Digital Content to Sign Language Converter is a comprehensive tool that converts various forms of Digital media (YouTube videos, local videos, audio files, and text) into sign language videos. This project leverages several libraries and APIs to process and translate spoken or written content into Indian Sign Language (ISL) syntax, creating videos that can aid in communication for the deaf and hard-of-hearing community.
 
-## Project Objective
+## 💡Project Objective
 The primary objective of this project is to bridge the communication gap for individuals who rely on sign language. By converting various media formats into sign language videos, we aim to provide an accessible and efficient means of understanding content that is traditionally available only in spoken or written form.
 
-## Features
+## 📚Features
 - **YouTube Video Processing:** Download and convert YouTube videos into sign language videos.
 - **Local File Processing:** Convert local video or audio files into sign language videos.
 - **Text Input Processing:** Translate text into sign language videos.
