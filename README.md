@@ -168,9 +168,7 @@ The primary objective of this project is to bridge the communication gap for ind
    ```
    - Update the `Java.exe` location in `textToISL.py`
    
-4. **Create an API credentials for the Speech To Text API from Google Cloud by following these steps:**
-   
-5. **Clone the Repository:**
+4. **Clone the Repository:**
    ```
    git clone https://github.com/SaiNivedh26/Hackathon-June-2024
    cd Hackathon-June-2024
