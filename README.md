@@ -174,7 +174,7 @@ The primary objective of this project is to bridge the communication gap for ind
    cd Hackathon-June-2024
    ```
 
-6. **Run the app.py file in the terminal:**
+5. **Run the app.py file in the terminal:**
    ```
    streamlit run app.py
    ```
