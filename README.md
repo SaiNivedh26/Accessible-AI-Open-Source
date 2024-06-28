@@ -100,5 +100,5 @@ The primary objective of this project is to bridge the communication gap for ind
 
 6. **Run the app.py file in the terminal:**
    ```
-   streamlit run Hackathon-June-2024/app.py
+   streamlit run app.py
    ```
