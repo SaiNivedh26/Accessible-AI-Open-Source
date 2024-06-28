@@ -68,9 +68,7 @@ The primary objective of this project is to bridge the communication gap for ind
    - Test the application with various inputs to ensure accuracy and robustness.
    - Optimize the processing pipeline for efficiency and speed.
 
-5. **Deployment:**
-   - Deploy the application on a suitable platform for accessibility.
-
+     
 ## How to Run 💻
 1. **Clone the Repository:**
    ```
@@ -78,4 +76,7 @@ The primary objective of this project is to bridge the communication gap for ind
    cd Hackathon-June-2024
    ```
 
-   ***HAVE TO COMPLETE THE "HOW TO RUN" PART***
+2. **Run the app.py file in the terminal:**
+   ```
+   streamlit run Hackathon-June-2024/app.py
+   ```
