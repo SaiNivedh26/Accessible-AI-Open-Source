@@ -2,7 +2,11 @@
 
 ## Project Demo
 Before diving into the details of the process, take a moment to watch a demo video showcasing our project in action.
-***ADD THE VIDEO FILE HERE
+
+
+https://github.com/SaiNivedh26/Hackathon-June-2024/assets/142657686/5fc4c085-bc0c-4f40-bd07-5f316945b1ff
+
+
 
 ## Project Overview
 The Digital Content to Sign Language Converter is a comprehensive tool that converts various forms of Digital media (YouTube videos, local videos, audio files, and text) into sign language videos. This project leverages several libraries and APIs to process and translate spoken or written content into Indian Sign Language (ISL) syntax, creating videos that can aid in communication for the deaf and hard-of-hearing community.
@@ -140,6 +144,8 @@ The primary objective of this project is to bridge the communication gap for ind
 1. Update the paths of JSON file which you've downloaded in main code
 2. Update the name of bucket correctly in main code
 
+<br>
+<br>
 <br>
      
 # How to Run 💻
