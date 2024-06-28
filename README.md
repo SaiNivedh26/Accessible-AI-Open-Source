@@ -4,7 +4,7 @@
 
 ### Issues to Address
 
-- [ ] Issue 1: while giving text alone, the video is not generating
+- [x] Issue 1: while giving text alone, the video is not generating
 - [ ] Issue 2: Even if I upload some video/audio, still the same condition
 - [ ] Issue 3: Improve documentation ( making it in detailed pdf )
 - [x] Issue 4: Improve User Interface
