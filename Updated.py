@@ -30,18 +30,19 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 
 # Set up Stanford Parser
-java_path = "C:\\Program Files\\Java\\jdk-22\\bin\\java.exe"  
+java_path = "C:\\Program Files\\Java\\jdk-21"
 os.environ['JAVAHOME'] = java_path
 
-sp = StanfordParser(path_to_jar="C:\\Users\\baran\\Downloads\\stanford-parser-full-2018-02-27\\stanford-parser-full-2018-02-27\\stanford-parser.jar",
-                    path_to_models_jar="C:\\Users\\baran\\Downloads\\stanford-parser-full-2018-02-27\\stanford-parser-full-2018-02-27\\stanford-parser-3.9.1-models.jar")
+sp = StanfordParser(path_to_jar="C:\\Users\\saini\\Downloads\\stanford-parser-full-2018-02-27\\stanford-parser-full-2018-02-27\\stanford-parser.jar",
+                    path_to_models_jar="C:\\Users\\saini\\Downloads\\stanford-parser-full-2018-02-27\\stanford-parser-full-2018-02-27\\stanford-parser-3.9.1-models.jar")
+
 
 
 stopwords_set = set(['a', 'an', 'the', 'is', 'to', 'The', 'in', 'of', 'us'])
 
 class VideoProcessor:
     def __init__(self):
-        credentials = service_account.Credentials.from_service_account_file("google_credentials.json")
+        credentials = service_account.Credentials.from_service_account_file("C:\\Users\\saini\\Downloads\\google_credentials.json")
         self.client = speech_v1.SpeechClient(credentials=credentials)
         self.storage_client = storage.Client(credentials=credentials)
         self.bucket_name = "sign-language-1"
@@ -56,7 +57,7 @@ class VideoProcessor:
                 'preferredquality': '192',
             }],
             'outtmpl': audio_path.replace('.wav', ''),
-            'ffmpeg_location': 'ffmpeg.exe',
+            'ffmpeg_location': 'C:\\ffmpeg-2024-06-21-git-d45e20c37b-full_build\\ffmpeg-2024-06-21-git-d45e20c37b-full_build\\bin\\ffmpeg.exe',
             'postprocessor_args': [
                 '-ac', '1'  # This argument tells FFmpeg to output mono audio
             ],
@@ -254,7 +255,7 @@ root_path = 'NLP_dataset'
 yt_path = 'yt'
 
 
-NLP_videos = pd.read_csv("NLP_videos.csv")
+NLP_videos = pd.read_csv("G:\\video_samples\\Speech_to_ISL\\NLP_videos.csv")
 
 
 
@@ -292,14 +293,16 @@ root_path = 'NLP_dataset'
 yt_path = 'yt'
 
 # Load the NLP_videos CSV
-NLP_videos = pd.read_csv('NLP_videos.csv')
+NLP_videos = pd.read_csv("G:\\video_samples\\Speech_to_ISL\\NLP_videos.csv")
 
 # Function to get the path of the GIF
+#     # Function to get the path of the GIF
 def get_gif_path(character):
-    gif_path = f"alphabet\\{character}_small.gif"
-    if not os.path.exists(gif_path):
-        raise FileNotFoundError(f"GIF for character {character} not found.")
-    return gif_path
+        gif_path = f"C:\\Users\\saini\\Downloads\\alphabet\\{character}_small.gif"
+        if not os.path.exists(gif_path):
+            print(f"Warning: GIF for character '{character}' not found. Skipping.")
+            return None
+        return gif_path
 
 
 # Function to convert text to ISL
@@ -388,15 +391,15 @@ def main():
             transcript = processor.process_video(youtube_url)
             progress_bar.progress(60)
 
-            # Convert transcript to ISL
-            isl_text = text_to_isl(transcript)
+            text_to_vid(transcript)
+
             progress_bar.progress(100)
 
             st.subheader("Transcript:")
             st.write(transcript)
 
             st.subheader("Converted Sign Language Text:")
-            st.write(isl_text)
+            st.video("merged.mp4") 
 
     elif input_type == "Local Video/Audio File":
         uploaded_file = st.file_uploader("Upload a video or audio file", type=["mp4", "mov", "avi", "wav"])
@@ -414,15 +417,14 @@ def main():
             transcript = processor.process_video(file_path)
             progress_bar.progress(60)
 
-            # Convert transcript to ISL
-            isl_text = text_to_isl(transcript)
+            text_to_vid(transcript)
             progress_bar.progress(100)
 
             st.subheader("Transcript:")
             st.write(transcript)
 
             st.subheader("Converted Sign Language Text:")
-            st.write(isl_text)
+            st.video("merged.mp4") 
 
     elif input_type == "Text Input":
         user_text = st.text_area("Enter text:")
