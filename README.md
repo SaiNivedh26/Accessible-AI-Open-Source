@@ -1,6 +1,9 @@
 # 🖐️🤘Digital Content to Sign Language Converter
 
 ## 💻Project Demo
+
+<img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" alt="PDF" width="50" height="50">
+
 Before diving into the details of the process, take a moment to watch a demo video showcasing our project in action.
 
 
