@@ -1,4 +1,4 @@
-# 🖐️🤘Digital Content to Sign Language Converter
+# 🖐️🤘ACCESSIBLE AI : Digital content to sign language converter
 
 ## 💻Project Demo
  ### View Our Report 
