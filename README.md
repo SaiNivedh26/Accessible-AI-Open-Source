@@ -10,7 +10,7 @@ Before diving into the details of the process, take a moment to watch a demo vid
 
 [![Watch the video](https://i.ytimg.com/an_webp/B29McIvbwd4/mqdefault_6s.webp?du=3000&sqp=COjhiLQG&rs=AOn4CLCX8fLm1cB_SXPWT4PIcs2UHOry_A)](https://www.youtube.com/watch?v=B29McIvbwd4)
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=B29McIvbwd4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 
