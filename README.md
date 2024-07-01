@@ -8,6 +8,9 @@
 
 Before diving into the details of the process, take a moment to watch a demo video showcasing our project in action.
 
+[![Watch the video](https://i.ytimg.com/an_webp/B29McIvbwd4/mqdefault_6s.webp?du=3000&sqp=COjhiLQG&rs=AOn4CLCX8fLm1cB_SXPWT4PIcs2UHOry_A)](https://www.youtube.com/watch?v=B29McIvbwd4)
+
+
 
 https://github.com/SaiNivedh26/Hackathon-June-2024/assets/142657686/5fc4c085-bc0c-4f40-bd07-5f316945b1ff
 
