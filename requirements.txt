@@ -1,6 +1,6 @@
 streamlit==1.36.0
 google-cloud-speech==2.26.0
-yt-dlp==2024.5.27
+yt-dlp==2024.7.7
 moviepy==1.0.3
 pandas==2.2.2
 num2words==0.5.13
